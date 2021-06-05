@@ -18,9 +18,9 @@ This is my solution to produce the optimal schedule for Sally to attend the over
 ## Solution steps
 
 - Put all the times (both start and fininsh) appeared in the input into a list and sort it ascending.
-- Use a running show list to keep track of the show is running at current time and it's priority
+- Use a running_show_list to keep track of the show is running at current time and it's priority
 - Loop for each time in the list, if it's a start time for a performance, push the priority value to the running show list, if it's finish time then push (-priority) value.
-- For each time in the list, pick the highest priority performance in the running show list and put into result
+- For each time in the list, pick the highest priority performance in the running_show_list and put into result. If a new performance start, add the priority number to the running_show_list. If the performance finish, remove it's priority number out of the running_show_list.
 
 ### Example
 

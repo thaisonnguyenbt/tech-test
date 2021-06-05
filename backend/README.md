@@ -15,4 +15,25 @@ This is my solution to produce the optimal schedule for Sally to attend the over
 - Loop for each time in the list, if it's a start time for a performance, push the priority value to the running show list, if it's finish time then push (-priority) value.
 - For each time in the list, pick the highest priority performance in the running show list and put into result
 
+Eg: Given the input:
+
+```json
+[
+  {
+    "band": "Soundgarden",
+    "start": "1993-05-25T02:00:00Z",
+    "finish": "1993-05-25T02:50:00Z",
+    "priority": 5
+  },
+  {
+    "band": "Pearl Jam",
+    "start": "1993-05-25T02:15:00Z",
+    "finish": "1993-05-25T02:35:00Z",
+    "priority": 9
+  }
+]
+```
+
+The flow will be:
+
 ![diagram](https://github.com/thaisonnguyenbt/tech-test/blob/master/backend/Skedulo-BE.png?raw=true)

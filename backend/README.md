@@ -15,7 +15,9 @@ This is my solution to produce the optimal schedule for Sally to attend the over
 - Loop for each time in the list, if it's a start time for a performance, push the priority value to the running show list, if it's finish time then push (-priority) value.
 - For each time in the list, pick the highest priority performance in the running show list and put into result
 
-Eg: Given the input:
+### Example
+
+Given the input:
 
 ```json
 [
@@ -37,3 +39,9 @@ Eg: Given the input:
 The flow will be:
 
 ![diagram](https://github.com/thaisonnguyenbt/tech-test/blob/master/backend/Skedulo-BE.png?raw=true)
+
+## End note
+
+1. I didn't handle the different timezones case. Eg: `1993-05-25T02:00:00+10:00` and `1993-05-25T01:00:00+11:00` represent the same time but it will be sorted differently as a String. The times in the input must be consistent in the timezone.
+2. I chose NodeJS because it's lightweight and easy to setup and run. I'm more familiar with it too.
+3. The problem is quite hard, but to create the README file took me more time.

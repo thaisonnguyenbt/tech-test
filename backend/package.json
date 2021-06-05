@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "name": "skedulo",
+  "version": "1.0.0",
+  "main": "skedulo.js",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^27.0.4"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

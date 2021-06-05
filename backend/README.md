@@ -15,4 +15,4 @@ This is my solution to produce the optimal schedule for Sally to attend the over
 - Loop for each time in the list, if it's a start time for a performance, push the priority value to the running show list, if it's finish time then push (-priority) value.
 - For each time in the list, pick the highest priority performance in the running show list and put into result
 
-![diagram](https://github.com/thaisonnguyenbt/tech-test/backend/blob/master/diagram.png?raw=true)
+![diagram](https://github.com/thaisonnguyenbt/tech-test/blob/master/backend/Skedulo-BE.png?raw=true)

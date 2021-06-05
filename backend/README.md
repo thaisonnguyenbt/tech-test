@@ -8,6 +8,13 @@ This is my solution to produce the optimal schedule for Sally to attend the over
 - Execute `build.sh` file to install dependencies and run unit test.
 - Execute `run.sh` file, providing path the an input JSON file as parameter to produce the optimized schedule JSON file in the same folder.
 
+### Multiple Verify
+
+- In root folder, run `cd backend`.
+- run `bash <path to verify-music.sh> run.sh`
+  Eg:
+  ![diagram](https://github.com/thaisonnguyenbt/tech-test/blob/master/backend/Verify.png?raw=true)
+
 ## Solution steps
 
 - Put all the times (both start and fininsh) appeared in the input into a list and sort it ascending.

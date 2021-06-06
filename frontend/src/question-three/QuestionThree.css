@@ -1,0 +1,98 @@
+/* html,
+body {
+  height: 100vh;
+  overflow: hidden;
+} */
+
+.q3__container {
+  display: flex;
+  flex-direction: column;
+
+  background-color: #e4eef1;
+}
+
+.q3__header {
+  color: white;
+  background-color: #469af9;
+  padding: 0 20px;
+}
+
+.q3__title {
+  padding-top: 10px;
+  font-size: 24px;
+}
+
+.q3__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.q3__content {
+  flex-grow: 1;
+  display: flex;
+}
+
+.q3__left {
+  width: 30%;
+  min-width: 200px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.q3__right {
+  width: 70%;
+  flex-grow: 1;
+  border-left: solid 1px #222;
+  padding: 8px 16px;
+  background-color: #fff;
+}
+
+.q3__left_content,
+.q3__right_content {
+  overflow-y: auto;
+  max-height: calc(100vh - 200px);
+  min-height: calc(100vh - 200px);
+  padding: 0 8px;
+}
+
+.q3__job_tile {
+  background-color: #fff;
+}
+
+.q3__job_tile {
+  margin: 15px 15px 0 15px;
+  padding: 18px;
+  border-radius: 4px;
+}
+
+.q3__job_name {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.q3__job_id {
+  font-size: 20px;
+  margin-left: 8px;
+}
+
+.q3__job_location {
+  color: #8d8383;
+}
+
+.q3__job_date {
+  margin-top: 18px;
+  color: #8d8383;
+}
+
+.q3__job_time {
+  color: #8d8383;
+  font-weight: 600;
+}
+
+.q3__right_placeholder {
+  height: 150px;
+  background-color: #e4eef1;
+  margin: 18px;
+  border-radius: 4px;
+}

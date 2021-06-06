@@ -34,7 +34,7 @@ body {
 
 .q3__left {
   width: 30%;
-  min-width: 200px;
+  min-width: 250px;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
@@ -95,4 +95,19 @@ body {
   background-color: #e4eef1;
   margin: 18px;
   border-radius: 4px;
+}
+
+.q3__ressources_num {
+  position: relative;
+  width: 20px;
+  height: 25px;
+  float: right;
+  border: 1px solid #3d9bff;
+  border-radius: 50%;
+  margin-right: 2px;
+  margin-top: -30px;
+  padding-left: 11px;
+  padding-top: 5px;
+  font-weight: 600;
+  color: #3d9bff;
 }

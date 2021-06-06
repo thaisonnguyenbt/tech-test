@@ -12,7 +12,28 @@ export const QuestionThree: React.FC<IAppTabContainer> = () => {
   const [jobs, setJobs] = useState<any>([]);
 
   useEffect(() => {
-    DataService.getJobs().then((response) => setJobs(response));
+    const getJobsPromise = DataService.getJobs();
+    const getJobAllocPromise = DataService.getJobAllocations();
+
+    Promise.all([getJobsPromise, getJobAllocPromise]).then(([getJobsRes, getJobAllocRes]) => {
+      // count job resources
+      const jobAllocMap = new Map();
+      getJobAllocRes.forEach((alloc) => {
+        const count = jobAllocMap.get(alloc.jobId);
+        if (count) {
+          jobAllocMap.set(alloc.jobId, count + 1);
+        } else {
+          jobAllocMap.set(alloc.jobId, 1);
+        }
+      });
+
+      //set count to jobs
+      const tempJobs: any = [];
+      getJobsRes.forEach((job) => {
+        tempJobs.push({ ...job, resourcesCount: jobAllocMap.get(job.id) });
+      });
+      setJobs(tempJobs);
+    });
   }, []);
 
   return (

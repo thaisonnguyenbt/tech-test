@@ -16,6 +16,7 @@ const JobTile = ({ job }: any) => {
       <div className="q3__job_time">
         {getTime(job.start)} - {getTime(job.end)}
       </div>
+      {job.resourcesCount && <div className="q3__ressources_num">{job.resourcesCount}</div>}
     </div>
   );
 };
